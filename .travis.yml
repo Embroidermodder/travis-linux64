@@ -29,7 +29,7 @@ script:
     - make
     - ./libembroidery-convert
     - cd ../../embroidermodder2
-    - which ./embroidermodder2
+    - test -e ./embroidermodder2
     # Grab the help submodule and prepare it for copying
     - git clone https://github.com/Embroidermodder/Embroidermodder.github.io.git
     - mv Embroidermodder.github.io help-submodule
